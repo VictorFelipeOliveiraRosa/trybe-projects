@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Quattrocento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
+
+@font-face {
+  font-family: SFProDisplay-Regular;
+  src: url(../../fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgba(236, 226, 226, 0.774);
+  border: none;
+  border-radius: 4px;
+  color: rgba(46, 46, 46, 0.904);
+  font-family: 'Oswald', sans-serif;
+  height: 30px;
+  margin: 5px;
+  width: 80px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(202, 177, 177, 0.774);
+  cursor: pointer;
+}
+
+input[type=text] , input[type=email] , input[type=password]{
+  border: 1px solid rgb(187, 175, 175);
+  border-radius: 4px;
+  display: block;
+  height: 30px;
+  margin: 5px;
+  outline: none;
+  padding: 2px;
+  width: 50%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 80px 1fr 200px;
+  grid-template-areas: 
+    'cabecalho cabecalho cabecalho'
+    '. conteudo .'
+    '. rodape .';
+}
+
+.header-container {
+  grid-area: cabecalho;
+}
+
+.main-container {
+  grid-area: conteudo;
+}
+
+.footer-container {
+  grid-area: rodape;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+
+.top-bar-center {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.logo-container {
+  width: 30%
+}
+
+.facebook-logo {
+  height: 95%;
+  width: 50%;
+}
+
+.top-bar-forms {
+  height: 100%;
+  width: 70%;
+}
+
+.facebook-login {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin: 5px 10px 5px 10px;
+  width: 160px;
+}
+
+.label-forms-login {
+  color: #eceff3;
+}
+
+input.input-forms-header {
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 25px;
+  margin: 2px 0;
+  width: 100%;
+}
+
+.link-rest-password {
+  color: #eceff3;
+  font-size: 14px;
+  height: 2px;
+}
+
+.form-control {
+  align-self: flex-end;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 12%;
+}
+
+.btn-login {
+  background-color: rgb(49, 80, 143);
+  border: 1px solid black;
+  color: #eceff3;;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  height: 25px;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 65%;
+}
+
+.btn-login:hover {
+  background-color: rgb(34, 64, 124);
+}
+
+.connect-continue {
+  border: 0px;
+  margin: 0px;
+  width: 18px;
+}
+
+.text-continue-on {
+  color: #eceff3;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  width: 80%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-container {
+  /* border: 1px solid black; */
+  max-width: 48%;
+}
+
+.slogan-container {
+  margin-top: 40px;
+  width: 80%;
+}
+
+.slogan-main {
+  color: rgb(66, 103, 178);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: .10rem;
+}
+
+.img-networking-container {
+  width: 100%;
+}
+
+.img-networking-container img {
+  height: 230px;
+  width: 100%;
+}
+
+.right-content {
+  /* border: 1px solid black; */
+  /* max-width: 50%; */
+  max-width: 492px;
+}
+
+.title-right-container h1 {
+  font-size: 2.5em;
+  letter-spacing: .18rem;
+  margin-bottom: 16px;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+
+.sub-title-right-container h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 14px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.cadastrar-usuario {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input.password::-webkit-input-placeholder,
+input.phone-email::-webkit-input-placeholder,
+input.last-name::-webkit-input-placeholder,
+input.first-name::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 3;
+}
+
+input.first-name {
+  display: inline-block;
+  font-size: 15px;
+  height: 35px;
+  margin-bottom: 12px;
+  padding: 5px;
+  width: 47%;
+}
+
+input.last-name {
+  display: inline-block;
+  font-size: 15px;
+  height: 35px;
+  margin-bottom: 12px;
+  padding: 5px;
+  width: 47%;
+}
+
+input.phone-email {
+  font-size: 15px;
+  height: 35px;
+  margin-bottom: 14px;
+  padding: 5px;
+  width: 97%;
+}
+
+input.password {
+  font-size: 15px;
+  height: 35px;
+  margin-bottom: 14px;
+  padding: 5px;
+  width: 97%;
+}
+
+.title-birtth {
+  display: block;
+  font-size: 1.4em;
+  margin-left: 5px;
+}
+
+.group-select-birthdate {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: auto;
+}
+
+.day-birth {
+  font-size: 16px;
+  height: 33px;
+  margin: 0;
+  width: 70px;
+}
+
+.month-birth {
+  font-size: 16px;
+  height: 33px;
+  margin: 0;
+  width: 120px;
+}
+
+.year-birth {
+  font-size: 16px;
+  height: 33px;
+  margin: 0;
+  width: 85px;
+}
+
+.day-birth:focus,
+.month-birth:focus,
+.year-birth:focus {
+  outline: none;
+}
+
+.why-inform-date-of-birth {
+  display: inline-block;
+  font-size: 9px;
+  width: 28%;
+}
+
+.gender-all-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.title-gender {
+  font-size: 14px;
+  margin-left: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.gender-personlaizado-container,
+.gender-masculino-container,
+.gender-feminino-container {
+  margin: 6px;
+}
+
+.content-gender-personalizado {
+  width: 100%;
+}
+
+.content-gender-personalizado .personality-gender-other {
+  display: none;
+}
+
+.register-term {
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.container-button-cad {
+  margin-top: 20px;
+}
+
+.btn-register {
+  background-color: green;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 800;
+  height: 40px;
+  width: 180px;
+}
+
+.btn-register:hover {
+  background-color: rgb(3, 110, 3);
+}

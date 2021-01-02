@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Facebook</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="container">
+    <header class="header-container">
+      <div class="top-bar">
+        <div class="top-bar-center">
+          <div class="logo-container">
+            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo-facebook">
+          </div>
+          <div class="top-bar-forms">
+            <forms class="facebook-login">
+              <div class="form-group">
+                <label class="label-forms-login" id="user-email-phone-label" for="">Email ou telefone</label>
+                <input class="input-forms-header" id="user-email-phone" type="text" name="">
+                <div class="form-group-check-on">  
+                  <input class="connect-continue" id="continue-on" type="checkbox">
+                  <label class="text-continue-on" for="continue-on">Permanecer conectado ?</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label-forms-login" id="user-password-label">Senha</label>
+                <input class="input-forms-header" type="password">
+                <label><a class="link-rest-password" href="#">Esqueceu a conta?</a></label>
+              </div>
+              <div class="form-control">
+                <button class="btn-login" id="button-login" type="submit">Entrar</button>
+              </div>
+            </forms>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="main-content">
+        <div class="left-container">
+          <div class="slogan-container">
+            <p class="slogan-main" id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+            sua vida.</p>
+          </div>
+          <div class="img-networking-container">
+            <img src="imgs/networking.png" alt="">
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="title-right-container">
+            <h1>Abra uma conta</h1>
+          </div>
+          <div class="sub-title-right-container">
+            <h3 class="quick-easy">É rápido e fácil.</h3>
+          </div>
+          <form action="#" class="cadastrar-usuario">
+            <input class="first-name" type="text" name="firstname" id="firstname" placeholder="Nome" required>
+            <input class="last-name" type="text" name="lastname" id="lastname" placeholder="Sobrenome" required>
+            <input class="phone-email" type="text" name="phone_email" id="phone-and-email" placeholder="E-mail ou número do celular" required>
+            <input class="password" type="password" name="password" id="password-user" placeholder="Nova senha" required>
+            <div class="container-birthdate">
+              <label class="title-birtth" for="">Aniversário</label>
+              <div class="group-select-birthdate">
+                <select class="day-birth" id="user-day-birth" name="day-birthdate" required>
+                  <option value="" disabled selected hidden>Dia</option>
+                </select>
+                <select class="month-birth" id="user-month-birth" name="month-birthdate" required>
+                  <option value="" disabled selected hidden>Mês</option>
+                </select>
+                <select class="year-birth" id="user-year-birth" name="year-birthdate" required>
+                  <option value="" disabled selected hidden>Ano</option>
+                </select>
+              </div>
+              <div class="why-inform-date-of-birth">
+                <span>Por que preciso informar minha data de nascimento?</span>
+              </div>
+            </div>
+            <div class="gender-all-container">
+              <label class="title-gender" for="">Gênero</label> 
+              <div class="gender-feminino-container">
+                <input class="gender-fem" id="feminino" type="radio" name="gender" value="feminino" required> 
+                <label class="in-fem" for="feminino">Feminino</label>
+              </div>
+              <div class="gender-masculino-container">
+                <input class="gender-masc selected" id="masculino" type="radio" name="gender" value="masculino" required> 
+                <label class="in-mas" for="masculino">Masculino</label>
+              </div>
+              <div class="gender-personlaizado-container">
+                <input class="gender-personalizado" id="personalizado" type="radio" name="gender" value="personalizado" required> 
+                <label class="in-pers" for="personalizado">Personalizado</label>
+              </div>
+              <div class="content-gender-personalizado">
+                <input class="personality-gender-other" id="gender-other-type" type="text" name="gender-custon" placeholder="Personalizado">
+              </div>
+            </div>
+            <div class="register-term">
+              <span class="">Ao clicar em Cadastrar-se, você concorda com os nossos Termos e que leu a nossa Política de Dados, incluindo o nosso Uso de Cookies.</span>
+            </div>
+            <div class="container-button-cad">
+              <button class="btn-register" id="facebook-register" type="submit">Cadastre-se</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container"></footer>
+    <script src="script.js"></script>
+  </body>
+
+</html>

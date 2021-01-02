@@ -1,0 +1,106 @@
+@font-face {
+   font-family: SFProDisplay-Regular;
+   src: url(../../fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgba(236, 226, 226, 0.774);
+  border: none;
+  border-radius: 4px;
+  color: rgba(46, 46, 46, 0.904);
+  font-family: 'Oswald', sans-serif;
+  height: 30px;
+  margin: 5px;
+  width: 80px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+input.login-user, input.login-password {
+  height: 25px;
+  width: 200px;
+}
+
+button.btn-login {
+  height: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  box-sizing: border-box;
+  min-width: 800px;
+}
+
+.right-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  min-width: 300px;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.firstName {
+  width: 140px;
+}
+
+.lastName {
+  width: 140px;
+}
+
+.phoneEmail , .myPassword , .birthDate {
+  width: 292px;
+}
+
+.invalid {
+  display: none;
+}
+
+.genderOpc {
+  display: none;
+}
